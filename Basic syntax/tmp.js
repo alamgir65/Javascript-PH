@@ -37,3 +37,6 @@ console.log('-------------');
 for(const x in student){
     console.log(x);
 }
+
+
+// Kire mama ki obstha?

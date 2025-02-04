@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+    </header>
+    <main>
+        <h1>My awesome DOM</h1>
+        <ul>
+            <li>Alamgir</li>
+            <li>Hossain</li>
+            <li class="wasCrush">Naeem</li>
+            <li class="wasCrush">Fayeza</li>
+        </ul>
+        <section class="fruits-container">
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul>
+                <li>Banana</li>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Mango</li>
+            </ul>
+        </section>
+    
+    </main>
+
+    <script src="dom.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        // for(let li of liCollection){
+        //     console.log(li);
+        // }
+        const crush = document.getElementsByClassName('wasCrush');
+        for(let x of crush){
+            // console.log(x.innerText);
+            // x.innerText = 'You were just my Ex';
+        }
+        const tmp = document.querySelectorAll('.fruits-container li');
+        console.log(tmp);
+        const x = document.querySelector('.fruits-container li');
+        console.log(x);
+    </script>
+</body>
+</html>

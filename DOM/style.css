@@ -4,3 +4,8 @@ h1{
 .wasCrush{
     color: rgb(50, 10, 172);
 }
+.change-style{
+    font-size: large;
+    font-weight: 900;
+    text-align: center;
+}

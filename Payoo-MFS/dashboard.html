@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-black grid place-content-center">
+                <div class="hero bg-base-200 min-h-screen">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl p-4">
+                            <div class="stats shadow">
+                                <div class="stat">
+                                    <div class="stat-value" id="balance">89400</div>
+                                    <div class="stat-desc">Available balance</div>
+                                </div>
+                            </div>
+
+                            <div class="divider"></div>
+                            <div class="d-flex justify-center">
+                                <button class="btn btn-soft btn-accent" id="add-money-btn">Add Money</button>
+                                <button class="btn btn-soft btn-info" id="cashout-btn">Cashout</button>
+                            </div>
+
+                            <div class="divider"></div>
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl" style="display: none;" id="add-money-form">
+                                <div class="card-body">
+                                    <fieldset class="fieldset">
+                                        <label class="fieldset-label">Amount</label>
+                                        <input type="number" id="add-amount" class="input" placeholder="Amount" />
+                                        <label class="fieldset-label">PIN</label>
+                                        <input type="password" id="add-pin" class="input" placeholder="PIN" />
+                                        <button class="btn btn-neutral mt-4" id="add-money-submit-btn">Add money</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl" id="cashout-form" style="display: none;">
+                                <div class="card-body">
+                                    <fieldset class="fieldset">
+                                        <label class="fieldset-label">Amount</label>
+                                        <input type="number" id="cashout-amount" class="input" placeholder="Amount" />
+                                        <label class="fieldset-label">PIN</label>
+                                        <input type="password" id="cashout-pin" class="input" placeholder="PIN" />
+                                        <button class="btn btn-neutral mt-4" id="cashout-submit-btn">Cashout</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
